@@ -1,0 +1,19 @@
+NOTICE: USAGE AND ATTRIBUTION
+
+This repository contains software developed for the quantification of 
+2D cell migration.
+
+Third-Party Code: The function `msd2pse0.m` and the core Persistent
+Random Walk (PRW) fitting logic are derived from supplementary material
+originally published by Wu et al. in Nature Protocols (2015).
+
+Modifications: This version has been modified by the Mistriotis Lab to
+include:
+1. Refined parameter bounds 
+2. Coefficient labels to clarify parameter bound assignments
+3. Implementation of a "First-Half" MSD fitting rule
+
+Usage: This code is provided for academic and research purposes. Users
+are requested to cite both the original authors (Wu et al., 2015) and 
+the paper associated with this repository (Akinpelu et al., 2026) in any 
+resulting publications. 
