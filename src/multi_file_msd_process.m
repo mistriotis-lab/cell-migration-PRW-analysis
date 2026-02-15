@@ -6,7 +6,7 @@ function [] = multi_file_msd_process()
     % model. Additionally, fits the exponent and anamolous diffusivity 
     % coefficient from the power law definition of MSD. 
     %
-    % Lines 301 through 303 may be modified to change boundaries and
+    % Lines 332 through 334 may be modified to change boundaries and
     % starting points of solved parameters in the fitted model.
     %
     %   1. begin by checking if track length is less than min_length time 
@@ -263,7 +263,7 @@ function msd = calculateMSD(x, y)
 end
 
 function [P,S,SE,gof]=msd2pse0(msd,dt,dim)
-% This function is adapted from P.-H. Wu, A. Giri, and D. Wirtz, 
+% This function is adapted from PH. Wu, A. Giri, and D. Wirtz, 
 % "Statistical analysis of cell migration in 3D using the anisotropic 
 % persistent random walk model," *Nat Protoc*, vol. 10, no. 3, pp. 517–527,
 % Mar. 2015, doi: [10.1038/nprot.2015.030](10.1038/nprot.2015.030)" and is
@@ -330,7 +330,7 @@ function [P,S,SE,gof]=msd2pse0(msd,dt,dim)
 
     s = fitoptions('Method','NonlinearLeastSquares',...
                    'Lower',[0 0.01 0],...
-                   'Upper',[3 60 100],...
+                   'Upper',[3.5 20 100],...
                    'Startpoint',[1 10 1]);
                
     f=fittype([num2str(dim),'*S^2*P*(x-P*(1-exp(-x/P)))+',num2str(2*dim),'*se'],...

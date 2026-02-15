@@ -43,16 +43,16 @@ This is done to minimize the influence of noise at high lag times.
 
 The data is fit to the PRW model:
 
-$$MSD(\tau) = nS^2P[\tau-P(1-exp(-\tau/P))] + 4\sigma ^2$$
+$$MSD(\tau) = nS^2P[\tau-P(1-exp(-\tau/P))] + \left(n\sigma\right) ^2$$
 
 ## Licensing, Attributions, and Citations
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the [LICENSE file](LICENSE) for details. 
 
 This repository contains code adapted from the DeepBioVision Lab (Wu et al.,*Nature Protocols* 2015), used under the MIT License.
 Modifications made by the Mistriotis Laboratory are documented within the respective function headers.
 
 If you use this code, please cite:
 1. Akinpelu et al. 2026
-2. P.-H. Wu, A. Giri, and D. Wirtz, “Statistical analysis of cell migration in 3D using the anisotropic persistent random walk model,” *Nat Protoc*, vol. 10, no. 3, pp. 517–527, Mar. 2015, doi: [10.1038/nprot.2015.030](10.1038/nprot.2015.030).
-3. P.-H. Wu, J. M. Phillip, W. Du, A. Forjaz, P. R. Nair, and D. Wirtz, “Methods to analyze cell migration data: fundamentals and practical guidelines,” *Nat Methods*, vol. 23, no. 1, pp. 43–55, Aug. 2025, doi: [10.1038/s41592-025-02935-5](10.1038/s41592-025-02935-5).
+2. PH. Wu, A. Giri, and D. Wirtz, “Statistical analysis of cell migration in 3D using the anisotropic persistent random walk model,” *Nat Protoc*, vol. 10, no. 3, pp. 517–527, Mar. 2015, doi: [10.1038/nprot.2015.030](10.1038/nprot.2015.030).
+3. PH. Wu, J. M. Phillip, W. Du, A. Forjaz, P. R. Nair, and D. Wirtz, “Methods to analyze cell migration data: fundamentals and practical guidelines,” *Nat Methods*, vol. 23, no. 1, pp. 43–55, Aug. 2025, doi: [10.1038/s41592-025-02935-5](10.1038/s41592-025-02935-5).
