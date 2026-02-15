@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1154223532.svg)](https://doi.org/10.5281/zenodo.18646377)
 # Cell Motility Analysis (PRW Model)
 
 This repository contains MATLAB scripts for calculating Mean Squared Displacement (MSD) and fitting a Persistent Random Walk (PRW) model to 2D cell trajectories.
